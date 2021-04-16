@@ -45,3 +45,9 @@ Mucha suerte.
 
 | Criteria | Percentage |
 | -------- | ---------- |
+
+
+## Planning ##
+
+
+![planning](https://github.com/brayangomez22/SofkaHub/blob/master/frontend/src/assets/img/planning.jpeg)
