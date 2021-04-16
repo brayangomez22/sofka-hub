@@ -4,7 +4,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -29,7 +29,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1000;
 }
+
 header .logo {
   width: 110px;
   height: 50px;
@@ -37,10 +39,12 @@ header .logo {
   padding: 4px;
   border-radius: 4px;
 }
+
 header .logo img {
   width: 100%;
   height: 100%;
 }
+
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,10 +56,12 @@ header ul {
       -ms-flex-align: center;
           align-items: center;
 }
+
 header ul li {
   list-style: none;
   margin-left: 20px;
 }
+
 header ul li a {
   text-decoration: none;
   padding: 6px 15px;
@@ -64,7 +70,65 @@ header ul li a {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-header ul li ahover, header ul li a.activeHeader {
+
+header ul li a:hover, header ul li a.activeHeader {
   background-color: #fff;
   color: #2b1055;
-}/*# sourceMappingURL=Home.css.map */
+}
+
+.container-welcome {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-welcome img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+
+.container-welcome img#moon {
+  mix-blend-mode: screen;
+}
+
+.container-welcome img#mountains_front {
+  z-index: 10;
+}
+
+.container-welcome #text {
+  position: absolute;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 5.5vw;
+  z-index: 9;
+}
+
+.container-welcome .btn-start {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background-color: #fff;
+  color: #2b1055;
+  font-size: 1.5em;
+  z-index: 11;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+/*# sourceMappingURL=Home.css.map */
