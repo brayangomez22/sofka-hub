@@ -1,16 +1,35 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+import logo from '../assets/img/home/logo.png'
+
 const Header = () => {
-    return (
-        <header>
-            <Link className="logo" to="/"><img src="" alt=""/></Link>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Abaut</a></li>
-            </ul>
-        </header>
-    )
+	return (
+		<header>
+			<Link className="logo" to="/">
+				<img src={logo} alt="logo" />
+			</Link>
+			<ul>
+				<li>
+					<a href="/" className="activeHeader">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="/">Abaut</a>
+				</li>
+				<li>
+					<a href="/">Abaut</a>
+				</li>
+				<li>
+					<a href="/">Abaut</a>
+				</li>
+				<li>
+					<a href="/">Abaut</a>
+				</li>
+			</ul>
+		</header>
+	)
 }
 
-
-export default Header;
+export default Header
