@@ -1,11 +1,13 @@
 import React from 'react'
-import Header from '../components/Header'
 import '../assets/sass/Home.scss'
+import Header from '../components/Header'
+import Welcome from '../components/Welcome'
 
 const Home = () => {
 	return (
 		<div>
 			<Header />
+			<Welcome />
 		</div>
 	)
 }
