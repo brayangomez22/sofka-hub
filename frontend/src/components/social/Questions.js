@@ -1,10 +1,53 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Persona2 from '../../assets/img/social/persona2.jpg'
 import Persona5 from '../../assets/img/social/persona5.jpg'
-import { auth } from '../../functions/signIn';
+import { auth, db } from '../../functions/signIn'
+
+import { useCollectionData } from 'react-firebase-hooks/firestore'
+import firebase from 'firebase/app'
 
 const Questions = () => {
-	const { photoURL } = auth.currentUser || { photoURL: "" };
+	const { photoURL, displayName, uid } = auth.currentUser || {
+		photoURL: '',
+		displayName: '',
+		uid: '',
+	}
+
+	const [response, setResponse] = useState({
+		text: '',
+	})
+
+	const [question, setQuestion] = useState({
+		photoURL: '',
+		displayName: '',
+		text: '',
+		uid: '',
+		response: [response],
+	})
+
+	const [formValue, setFormValue] = useState('')
+
+	const questionsRef = db.collection('questions')
+
+	const query = questionsRef.orderBy('createdAt')
+
+	const [questions] = useCollectionData(query, { idField: 'id' })
+
+	const handleOnSubmit = async (e) => {
+		e.preventDefault()
+
+		await questionsRef.add({
+			photoURL,
+			displayName,
+			uid,
+			text: formValue,
+			response: [],
+			createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+		})
+
+		setFormValue('')
+	}
+
 	return (
 		<div className="col main-content">
 			<div className="post">
@@ -15,14 +58,22 @@ const Questions = () => {
 						</p>
 					</div>
 					<div className="col">
-						<form action="">
-							<textarea name="mensaje" id="" placeholder="What do you want to know?"></textarea>
+						<form onSubmit={handleOnSubmit}>
+							<textarea
+								name="question"
+								id=""
+								placeholder="What do you want to know?"
+								value={formValue}
+								onChange={(e) => {
+									setFormValue(e.target.value)
+								}}
+							></textarea>
 							<div className="container-buttons d-flex justify-content-between">
 								<div className="media">
 									<p>
 										<i className="fas fa-images"></i>
 									</p>
-									<p >
+									<p>
 										<i className="fas fa-play"></i>
 									</p>
 									<p>
@@ -30,7 +81,7 @@ const Questions = () => {
 									</p>
 								</div>
 								<div>
-									<button>Publish</button>
+									<button type="submit">Publish</button>
 								</div>
 							</div>
 						</form>
