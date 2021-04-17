@@ -2,10 +2,11 @@ import React from 'react'
 
 import logo from '../../assets/img/social/logo.png'
 import person from '../../assets/img/social/persona2.jpg'
+import {Link} from 'react-router-dom';
 
 const Social = () => {
 	return (
-		<header>
+		<header className="header-social">
 			<div className="container">
 				<div className="row">
 					<div className="col-auto d-none d-md-block logo">
@@ -13,7 +14,7 @@ const Social = () => {
 							<img src={logo} alt="logo" />
 						</a>
 					</div>
-					<div className="col-12 col-sm-8 col-lg-6 order-2 order-sm-1 buscar mb-2 mb-sm-0">
+					<div className="col-12 col-sm-8 col-lg-6 order-2 order-sm-1 search mb-2 mb-sm-0">
 						<form action="">
 							<div className="row no-gutters">
 								<div className="col-10">
@@ -43,9 +44,9 @@ const Social = () => {
 						<a href="#">
 							<i className="fas fa-comments"></i>
 						</a>
-						<a href="#" className="imagen">
-							<img src={person} width="22" height="22" alt="person" />
-						</a>
+						<Link to="/perfil" className="image">
+							<img src={person} alt="person" />
+						</Link>
 					</nav>
 				</div>
 			</div>
