@@ -3,6 +3,7 @@ import '../assets/sass/Home.scss'
 import Header from '../components/Header'
 import Welcome from '../components/Welcome'
 import About from '../components/About'
+import Footer from '../components/Footer'
 
 const Home = () => {
 	window.addEventListener('scroll', () => {
@@ -31,6 +32,7 @@ const Home = () => {
 			<Header />
 			<Welcome />
 			<About />
+			<Footer />
 		</div>
 	)
 }

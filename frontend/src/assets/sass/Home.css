@@ -146,4 +146,20 @@ header ul li a:hover, header ul li a.activeHeader {
 .about p {
   font-size: 1em;
   color: #fff;
+}
+
+@media (max-width: 816px) {
+  header ul {
+    display: none;
+  }
+}
+@media (max-width: 674px) {
+  .about h2 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 542px) {
+  .about {
+    padding: 40px;
+  }
 }/*# sourceMappingURL=Home.css.map */
