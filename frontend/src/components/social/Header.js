@@ -2,19 +2,18 @@ import React from 'react'
 
 import logo from '../../assets/img/social/logo.svg'
 import person from '../../assets/img/social/persona2.jpg'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import { auth } from '../../functions/signIn'
 
 import { useHistory } from 'react-router-dom'
 
-
 const Social = () => {
 	const history = useHistory()
 
-	const signOut = ()=>{
-		auth.signOut();
+	const signOut = () => {
+		auth.signOut()
 	}
-	
+
 	if (!auth.currentUser) history.push('/')
 
 	return (
@@ -56,9 +55,40 @@ const Social = () => {
 						<a href="#">
 							<i className="fas fa-comments"></i>
 						</a>
-						<Link to="/perfil" className="image">
-							<img src={person} alt="person" />
-						</Link>
+
+						<div class="dropdown">
+							<button
+								className="image  dropdown-toggle"
+								type="button"
+								id="dropdownMenuButton2"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								<img src={person} alt="person" />
+							</button>
+							<ul
+								className="dropdown-menu dropdown-menu-dark"
+								aria-labelledby="dropdownMenuButton2"
+								style={{ background: '#111' }}
+							>
+								<li>
+									<a className="dropdown-item" href="#">
+										Action
+									</a>
+								</li>
+								<li>
+									<a className="dropdown-item" href="#">
+										Another action
+									</a>
+								</li>
+								<li>
+									<a className="dropdown-item" href="#">
+										Something else here
+									</a>
+								</li>
+							</ul>
+						</div>
+
 						<a href="#" onClick={signOut}>
 							<i className="fas fa-sign-out-alt"></i>
 						</a>

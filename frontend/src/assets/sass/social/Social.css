@@ -10,6 +10,11 @@
   text-decoration: underline;
 }
 
+.dropdown-item:hover {
+  color: #111 !important;
+  text-decoration: none;
+}
+
 .header-social {
   background: #2b1055;
   padding: 10px 0;
