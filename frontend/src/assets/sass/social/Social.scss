@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
 
-a{
+a {
 	color: #1176b6;
 	text-decoration: none;
 
-	&:hover{
+	&:hover {
 		text-decoration: underline;
 	}
 }
@@ -13,13 +13,12 @@ a{
 	background: #e9ebee;
 }
 
-.header-social{
+.header-social {
 	background: #1176b6;
 	padding: 10px 0;
 
-	& .search{
-
-		& form input[type="text"]{
+	& .search {
+		& form input[type='text'] {
 			width: 100%;
 			background: #fff;
 			border: none;
@@ -32,7 +31,7 @@ a{
 			outline: none;
 		}
 
-		& form button{
+		& form button {
 			width: 100%;
 			background: #fff;
 			border: none;
@@ -43,37 +42,166 @@ a{
 			border-radius: 0 3px 3px 0;
 			cursor: pointer;
 			color: #6d6d6d;
-			transition: .5s ease;
+			transition: 0.5s ease;
 
-			&:hover{
+			&:hover {
 				background: #099efc;
 				color: #fff;
 			}
 		}
 	}
 
-	& .menu{
+	& .menu {
 		padding: 0;
 
-		& a{
+		& a {
 			color: rgba(255, 255, 255, 0.8);
 
-			&:hover{
+			&:hover {
 				color: rgba(255, 255, 255, 1);
 			}
 		}
 	}
 
-	& .image{
+	& .image {
 		display: inline-block;
 		width: 27px;
 		height: 27px;
 		overflow: hidden;
 		border-radius: 50%;
 
-		& img{
+		& img {
 			width: 100%;
 			height: 100%;
+		}
+	}
+}
+
+main {
+	padding-top: 20px;
+
+	& .main-content .post {
+		margin-bottom: 20px;
+
+		& .photo a {
+			width: 60px;
+			height: 60px;
+			display: inline-block;
+			overflow: hidden;
+			border-radius: 100px;
+			margin-top: 20px;
+		}
+
+		& .photo img {
+			width: 100%;
+		}
+
+		& form textarea {
+			width: 100%;
+			max-width: 100%;
+			min-height: 100px;
+			max-height: 300px;
+			border: none;
+			padding: 15px;
+			font-size: 16px;
+			color: #565656;
+			box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
+		}
+
+		& form .container-buttons {
+			padding: 20px 0;
+			border-bottom: 1px solid #c7c8ca;
+
+			& a {
+				color: #8d8d8d;
+				font-size: 20px;
+				margin-right: 10px;
+
+				&:hover {
+					color: #3d3d3d;
+				}
+			}
+		}
+
+		& form button {
+			border: 1px solid #00609c;
+			padding: 5px 30px;
+			font-size: 14px;
+			font-family: 'Roboto', sans-serif;
+			background: linear-gradient(to bottom, #1a87cd, #1176b6 100%);
+			color: #fff;
+			border-radius: 3px;
+			cursor: pointer;
+
+			&:hover {
+				background: linear-gradient(to bottom, #1176b6, #1a87cd 100%);
+			}
+		}
+	}
+
+	& .main-content .publication {
+		margin-bottom: 40px;
+
+		& .photo a {
+			display: inline-block;
+			width: 60px;
+			height: 60px;
+			overflow: hidden;
+			border-radius: 100px;
+		}
+
+		& .photo img {
+			width: 100%;
+		}
+
+		& .name {
+			font-size: 16px;
+			line-height: 16px;
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+
+		& .text {
+			background: #fff;
+			color: #3d3c3c;
+			font-size: 14px;
+			padding: 15px;
+			margin-bottom: 15px;
+		}
+
+		& .image {
+			padding: 15px;
+			background: #fff;
+			margin-bottom: 15px;
+
+			& img {
+				width: 100%;
+			}
+		}
+
+		& .publication .post .box-buttons {
+			margin-bottom: 20px;
+
+			& button {
+				background: #1176b6;
+				color: #fff;
+				cursor: pointer;
+				padding: 10px 20px;
+				display: inline-block;
+				font-size: 18px;
+				line-height: 18px;
+				border-radius: 4px;
+				border: none;
+
+				&:hover {
+					background: #0d659d;
+				}
+			}
+
+			& p {
+				margin-bottom: 0;
+				color: #1782c6;
+			}
 		}
 	}
 }

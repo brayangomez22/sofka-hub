@@ -1,4 +1,179 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap");
+a {
+  color: #1176b6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 .social {
   background: #e9ebee;
+}
+
+.header-social {
+  background: #1176b6;
+  padding: 10px 0;
+}
+.header-social .search form input[type=text] {
+  width: 100%;
+  background: #fff;
+  border: none;
+  font-size: 12px;
+  padding: 0 10px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 3px 0 0 3px;
+  color: #6d6d6d;
+  outline: none;
+}
+.header-social .search form button {
+  width: 100%;
+  background: #fff;
+  border: none;
+  font-size: 12px;
+  padding: 0 10px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  color: #6d6d6d;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.header-social .search form button:hover {
+  background: #099efc;
+  color: #fff;
+}
+.header-social .menu {
+  padding: 0;
+}
+.header-social .menu a {
+  color: rgba(255, 255, 255, 0.8);
+}
+.header-social .menu a:hover {
+  color: white;
+}
+.header-social .image {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.header-social .image img {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  padding-top: 20px;
+}
+main .main-content .post {
+  margin-bottom: 20px;
+}
+main .main-content .post .photo a {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 100px;
+  margin-top: 20px;
+}
+main .main-content .post .photo img {
+  width: 100%;
+}
+main .main-content .post form textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 300px;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  color: #565656;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
+}
+main .main-content .post form .container-buttons {
+  padding: 20px 0;
+  border-bottom: 1px solid #c7c8ca;
+}
+main .main-content .post form .container-buttons a {
+  color: #8d8d8d;
+  font-size: 20px;
+  margin-right: 10px;
+}
+main .main-content .post form .container-buttons a:hover {
+  color: #3d3d3d;
+}
+main .main-content .post form button {
+  border: 1px solid #00609c;
+  padding: 5px 30px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1a87cd), to(#1176b6));
+  background: linear-gradient(to bottom, #1a87cd, #1176b6 100%);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+main .main-content .post form button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1176b6), to(#1a87cd));
+  background: linear-gradient(to bottom, #1176b6, #1a87cd 100%);
+}
+main .main-content .publication {
+  margin-bottom: 40px;
+}
+main .main-content .publication .photo a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 100px;
+}
+main .main-content .publication .photo img {
+  width: 100%;
+}
+main .main-content .publication .name {
+  font-size: 16px;
+  line-height: 16px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+main .main-content .publication .text {
+  background: #fff;
+  color: #3d3c3c;
+  font-size: 14px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+main .main-content .publication .image {
+  padding: 15px;
+  background: #fff;
+  margin-bottom: 15px;
+}
+main .main-content .publication .image img {
+  width: 100%;
+}
+main .main-content .publication .publication .post .box-buttons {
+  margin-bottom: 20px;
+}
+main .main-content .publication .publication .post .box-buttons button {
+  background: #1176b6;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 4px;
+  border: none;
+}
+main .main-content .publication .publication .post .box-buttons button:hover {
+  background: #0d659d;
+}
+main .main-content .publication .publication .post .box-buttons p {
+  margin-bottom: 0;
+  color: #1782c6;
 }/*# sourceMappingURL=Social.css.map */
