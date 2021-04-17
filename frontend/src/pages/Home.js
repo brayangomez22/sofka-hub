@@ -1,9 +1,9 @@
 import React from 'react'
-import '../assets/sass/Home.scss'
-import Header from '../components/Header'
-import Welcome from '../components/Welcome'
-import About from '../components/About'
-import Footer from '../components/Footer'
+import '../assets/sass/home/Home.scss'
+import Header from '../components/home/Header'
+import Welcome from '../components/home/Welcome'
+import About from '../components/home/About'
+import Footer from '../components/home/Footer'
 
 const Home = () => {
 	window.addEventListener('scroll', () => {
