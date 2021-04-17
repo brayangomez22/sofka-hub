@@ -13,9 +13,13 @@
 	}
 }
 
-.dropdown-item:hover {
-	color: #111 !important;
-	text-decoration: none;
+.dropdown-item{
+	color: #fff !important;
+
+	&:hover {
+		color: #111 !important;
+		text-decoration: none;
+	}
 }
 
 .header-social {
@@ -74,6 +78,7 @@
 		height: 27px;
 		overflow: hidden;
 		border-radius: 50%;
+		border: none;
 
 		& img {
 			width: 100%;
@@ -88,7 +93,7 @@ main {
 	& .main-content .post {
 		margin-bottom: 20px;
 
-		& .photo a {
+		& .photo p {
 			width: 60px;
 			height: 60px;
 			display: inline-block;

@@ -1,14 +1,15 @@
 import React from 'react'
 
 import logo from '../../assets/img/social/logo.svg'
-import person from '../../assets/img/social/persona2.jpg'
-import { Link } from 'react-router-dom'
 import { auth } from '../../functions/signIn'
+import {Link} from 'react-router-dom';
 
 import { useHistory } from 'react-router-dom'
 
 const Social = () => {
 	const history = useHistory()
+
+	const {  displayName, photoURL, email } = auth.currentUser || {uid:"", displayName:"", photoURL:"", email:""}
 
 	const signOut = () => {
 		auth.signOut()
@@ -21,9 +22,9 @@ const Social = () => {
 			<div className="container">
 				<div className="row">
 					<div className="col-auto d-none d-md-block logo">
-						<a href="#">
+						<Link to="/">
 							<img className="logo-social" width="22" height="22" src={logo} alt="logo" />
-						</a>
+						</Link>
 					</div>
 					<div className="col-12 col-sm-8 col-lg-6 order-2 order-sm-1 search mb-2 mb-sm-0">
 						<form action="">
@@ -56,7 +57,7 @@ const Social = () => {
 							<i className="fas fa-comments"></i>
 						</a>
 
-						<div class="dropdown">
+						<div className="dropdown">
 							<button
 								className="image  dropdown-toggle"
 								type="button"
@@ -64,7 +65,7 @@ const Social = () => {
 								data-bs-toggle="dropdown"
 								aria-expanded="false"
 							>
-								<img src={person} alt="person" />
+								<img src={photoURL} alt="person" />
 							</button>
 							<ul
 								className="dropdown-menu dropdown-menu-dark"
@@ -72,19 +73,14 @@ const Social = () => {
 								style={{ background: '#111' }}
 							>
 								<li>
-									<a className="dropdown-item" href="#">
-										Action
-									</a>
+									<span className="dropdown-item" href="#">
+										{displayName}
+									</span>
 								</li>
 								<li>
-									<a className="dropdown-item" href="#">
-										Another action
-									</a>
-								</li>
-								<li>
-									<a className="dropdown-item" href="#">
-										Something else here
-									</a>
+									<span className="dropdown-item" href="#">
+										{email}
+									</span>
 								</li>
 							</ul>
 						</div>
