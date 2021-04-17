@@ -1,4 +1,9 @@
 import React from 'react'
+import Persona1 from '../../assets/img/social/persona1.jpg'
+import Persona2 from '../../assets/img/social/persona2.jpg'
+import Persona5 from '../../assets/img/social/persona5.jpg'
+import Paisaje1 from '../../assets/img/social/paisaje1.jpg'
+import Paisaje2 from '../../assets/img/social/paisaje2.jpg'
 
 const Questions = () => {
 	return (
@@ -19,7 +24,7 @@ const Questions = () => {
 				<div className="row">
 					<div className="col-auto photo">
 						<a href="#">
-							<img src="img/persona2.jpg" alt="" />
+							<img src={Persona2} alt="" />
 						</a>
 					</div>
 					<div className="col">
@@ -28,13 +33,13 @@ const Questions = () => {
 							<div className="container-buttons d-flex justify-content-between">
 								<div className="media">
 									<a href="#">
-										<i className="icon-file-image"></i>
+										<i className="fas fa-images"></i>
 									</a>
 									<a href="#">
-										<i className="icon-play"></i>
+										<i className="fas fa-play"></i>
 									</a>
 									<a href="#">
-										<i className="icon-music"></i>
+										<i className="fas fa-music"></i>
 									</a>
 								</div>
 								<div>
@@ -50,7 +55,7 @@ const Questions = () => {
 				<div className="row">
 					<div className="col-auto photo">
 						<a href="#">
-							<img src="img/persona5.jpg" alt="" />
+							<img src={Persona5} alt="" />
 						</a>
 					</div>
 					<div className="col">
@@ -65,10 +70,10 @@ const Questions = () => {
 							</p>
 							<div className="box-buttons d-flex justify-content-between align-items-center">
 								<button>
-									<i className="icon-thumbs-up"></i>
+									<i className="fas fa-thumbs-up"></i>
 								</button>
 								<p>
-									15 <i className="icon-thumbs-up"></i>
+									15 <i className="fas fa-thumbs-up"></i>
 								</p>
 							</div>
 						</div>
@@ -76,47 +81,47 @@ const Questions = () => {
 				</div>
 				<div className="row">
 					<div className="col-10 offset-2">
-						<div className="comentarios">
-							<div className="row no-gutters comentario">
+						<div className="comments">
+							<div className="row no-gutters comment">
 								<div className="col-auto photo">
 									<a href="#">
-										<img src="img/persona2.jpg" alt="" />
+										<img src={Persona2} alt="" />
 									</a>
 								</div>
 								<div className="col">
 									<form action="">
-										<textarea name="" id="" placeholder="Comentario"></textarea>
+										<textarea name="" id="" placeholder="comment"></textarea>
 									</form>
 								</div>
 							</div>
 
-							<div className="row no-gutters comentario">
+							<div className="row no-gutters comment">
 								<div className="col-auto photo">
 									<a href="#">
-										<img src="img/persona2.jpg" alt="" />
+										<img src={Persona2} alt="" />
 									</a>
 								</div>
 								<div className="col">
-									<p className="respuesta">
+									<p className="answer">
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 										veniam.
 									</p>
-									<a href="#" className="me-gusta">
+									<a href="#" className="like-it">
 										Me gusta
 									</a>
 								</div>
 							</div>
 
-							<div className="row no-gutters comentario">
+							<div className="row no-gutters comment">
 								<div className="col-auto photo">
 									<a href="#">
-										<img src="img/persona5.jpg" alt="" />
+										<img src={Persona5} alt="" />
 									</a>
 								</div>
 								<div className="col">
-									<p className="respuesta">Incididunt ut labore et dolore magna aliqua.</p>
-									<a href="#" className="me-gusta">
+									<p className="answer">Incididunt ut labore et dolore magna aliqua.</p>
+									<a href="#" className="like-it">
 										Me gusta
 									</a>
 								</div>
@@ -129,7 +134,7 @@ const Questions = () => {
 				<div className="row">
 					<div className="col-auto photo">
 						<a href="#">
-							<img src="img/persona1.jpg" alt="" />
+							<img src={Persona1} alt="" />
 						</a>
 					</div>
 					<div className="col">
@@ -138,14 +143,14 @@ const Questions = () => {
 								Jose Lorem Ipsum
 							</a>
 							<div className="image">
-								<img src="img/paisaje1.jpg" alt="" />
+								<img src={Paisaje1} alt="" />
 							</div>
 							<div className="box-buttons d-flex justify-content-between align-items-center">
 								<button>
-									<i className="icon-thumbs-up"></i>
+									<i className="fas fa-thumbs-up"></i>
 								</button>
 								<p>
-									15 <i className="icon-thumbs-up"></i>
+									15 <i className="fas fa-thumbs-up"></i>
 								</p>
 							</div>
 						</div>
@@ -153,16 +158,16 @@ const Questions = () => {
 				</div>
 				<div className="row">
 					<div className="col-10 offset-2">
-						<div className="comentarios">
-							<div className="row no-gutters comentario">
+						<div className="comments">
+							<div className="row no-gutters comment">
 								<div className="col-auto photo">
 									<a href="#">
-										<img src="img/persona2.jpg" alt="" />
+										<img src={Persona2} alt="" />
 									</a>
 								</div>
 								<div className="col">
 									<form action="">
-										<textarea name="" id="" placeholder="Comentario"></textarea>
+										<textarea name="" id="" placeholder="comment"></textarea>
 									</form>
 								</div>
 							</div>
@@ -174,7 +179,7 @@ const Questions = () => {
 				<div className="row">
 					<div className="col-auto photo">
 						<a href="#">
-							<img src="img/persona2.jpg" alt="" />
+							<img src={Persona2} alt="" />
 						</a>
 					</div>
 					<div className="col">
@@ -183,14 +188,14 @@ const Questions = () => {
 								Alejandro Lorem Ipsum
 							</a>
 							<div className="image">
-								<img src="img/paisaje2.jpg" alt="" />
+								<img src={Paisaje2} alt="" />
 							</div>
 							<div className="box-buttons d-flex justify-content-between align-items-center">
 								<button>
-									<i className="icon-thumbs-up"></i>
+									<i className="fas fa-thumbs-up"></i>
 								</button>
 								<p>
-									15 <i className="icon-thumbs-up"></i>
+									15 <i className="fas fa-thumbs-up"></i>
 								</p>
 							</div>
 						</div>
@@ -198,16 +203,16 @@ const Questions = () => {
 				</div>
 				<div className="row">
 					<div className="col-10 offset-2">
-						<div className="comentarios">
-							<div className="row no-gutters comentario">
+						<div className="comments">
+							<div className="row no-gutters comment">
 								<div className="col-auto photo">
 									<a href="#">
-										<img src="img/persona2.jpg" alt="" />
+										<img src={Persona2} alt="" />
 									</a>
 								</div>
 								<div className="col">
 									<form action="">
-										<textarea name="" id="" placeholder="Comentario"></textarea>
+										<textarea name="" id="" placeholder="comment"></textarea>
 									</form>
 								</div>
 							</div>

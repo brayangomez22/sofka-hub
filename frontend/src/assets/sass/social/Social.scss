@@ -179,7 +179,7 @@ main {
 			}
 		}
 
-		& .publication .post .box-buttons {
+		& .post .box-buttons {
 			margin-bottom: 20px;
 
 			& button {
@@ -202,6 +202,45 @@ main {
 				margin-bottom: 0;
 				color: #1782c6;
 			}
+		}
+	}
+
+	& .publication .comment{
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #cbcbcb;
+
+		& .photo{
+			padding-left: 0;
+			margin-right: 15px;
+
+			& a{
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+			}
+		}
+
+		& form textarea{
+			width: 100%;
+			background: #fff;
+			border: 1px solid #cbcbcb;
+			color: #565656;
+			padding: 8px;
+			min-height: 40px;
+			height: 40px;
+			min-width: 100%;
+			max-width: 100%;
+			font-size: 14px;
+		}
+
+		& .answer{
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
+
+		& .like-it{
+			font-size: 14px;
 		}
 	}
 }
