@@ -1,18 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap");
-a {
-  color: #1176b6;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
 .social {
   background: #e9ebee;
 }
+.social a {
+  color: #2b1055;
+  text-decoration: none;
+}
+.social a:hover {
+  text-decoration: underline;
+}
 
 .header-social {
-  background: #1176b6;
+  background: #2b1055;
   padding: 10px 0;
 }
 .header-social .search form input[type=text] {
@@ -42,7 +41,7 @@ a:hover {
   transition: 0.5s ease;
 }
 .header-social .search form button:hover {
-  background: #099efc;
+  background: #24082b;
   color: #fff;
 }
 .header-social .menu {
@@ -108,19 +107,20 @@ main .main-content .post form .container-buttons a:hover {
   color: #3d3d3d;
 }
 main .main-content .post form button {
-  border: 1px solid #00609c;
+  border: 1px solid #1d0722;
   padding: 5px 30px;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1a87cd), to(#1176b6));
-  background: linear-gradient(to bottom, #1a87cd, #1176b6 100%);
+  background: #2b1055;
   color: #fff;
   border-radius: 3px;
   cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 main .main-content .post form button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#1176b6), to(#1a87cd));
-  background: linear-gradient(to bottom, #1176b6, #1a87cd 100%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 main .main-content .publication {
   margin-bottom: 40px;
@@ -156,11 +156,11 @@ main .main-content .publication .image {
 main .main-content .publication .image img {
   width: 100%;
 }
-main .main-content .publication .publication .post .box-buttons {
+main .main-content .publication .post .box-buttons {
   margin-bottom: 20px;
 }
-main .main-content .publication .publication .post .box-buttons button {
-  background: #1176b6;
+main .main-content .publication .post .box-buttons button {
+  background: #2b1055;
   color: #fff;
   cursor: pointer;
   padding: 10px 20px;
@@ -169,11 +169,71 @@ main .main-content .publication .publication .post .box-buttons button {
   line-height: 18px;
   border-radius: 4px;
   border: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
-main .main-content .publication .publication .post .box-buttons button:hover {
-  background: #0d659d;
+main .main-content .publication .post .box-buttons button:hover {
+  background: #1d0722;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
-main .main-content .publication .publication .post .box-buttons p {
+main .main-content .publication .post .box-buttons p {
   margin-bottom: 0;
-  color: #1782c6;
+  color: #2b1055;
+}
+main .publication .comment {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cbcbcb;
+}
+main .publication .comment .photo {
+  padding-left: 0;
+  margin-right: 15px;
+}
+main .publication .comment .photo a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+main .publication .comment form textarea {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #cbcbcb;
+  color: #565656;
+  padding: 8px;
+  min-height: 40px;
+  height: 40px;
+  min-width: 100%;
+  max-width: 100%;
+  font-size: 14px;
+}
+main .publication .comment .answer {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+main .publication .comment .like-it {
+  font-size: 14px;
+}
+main .right-sidebar h3 {
+  font-size: 16px;
+  text-align: center;
+}
+main .right-sidebar .ads a {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+main .right-sidebar .ads a img {
+  width: 100%;
+}
+main .right-sidebar footer.footerSocial {
+  font-size: 14px;
+}
+main .right-sidebar footer.footerSocial a {
+  color: #2b1055;
+  line-height: 14px;
+  margin-right: 10px;
+}
+main .right-sidebar footer.footerSocial .copyright {
+  color: #919191;
+  margin-top: 10px;
 }/*# sourceMappingURL=Social.css.map */

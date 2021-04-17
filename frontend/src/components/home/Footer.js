@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
 	return (
-		<footer>
+		<footer className="footerHome">
 			<div className="footer-content">
 				<h3>SofkaHub</h3>
 				<p>One for all, all for one</p>

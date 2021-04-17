@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
 
-a {
-	color: #1176b6;
-	text-decoration: none;
+.social {
+	background: #e9ebee;
 
-	&:hover {
-		text-decoration: underline;
+	& a {
+		color: #2b1055;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
-.social {
-	background: #e9ebee;
-}
-
 .header-social {
-	background: #1176b6;
+	background: #2b1055;
 	padding: 10px 0;
 
 	& .search {
@@ -45,7 +45,7 @@ a {
 			transition: 0.5s ease;
 
 			&:hover {
-				background: #099efc;
+				background: #24082b;
 				color: #fff;
 			}
 		}
@@ -124,17 +124,18 @@ main {
 		}
 
 		& form button {
-			border: 1px solid #00609c;
+			border: 1px solid #1d0722;
 			padding: 5px 30px;
 			font-size: 14px;
 			font-family: 'Roboto', sans-serif;
-			background: linear-gradient(to bottom, #1a87cd, #1176b6 100%);
+			background: #2b1055;
 			color: #fff;
 			border-radius: 3px;
 			cursor: pointer;
+			transition: 0.5s ease-in-out;
 
 			&:hover {
-				background: linear-gradient(to bottom, #1176b6, #1a87cd 100%);
+				transform: scale(1.1);
 			}
 		}
 	}
@@ -183,7 +184,7 @@ main {
 			margin-bottom: 20px;
 
 			& button {
-				background: #1176b6;
+				background: #2b1055;
 				color: #fff;
 				cursor: pointer;
 				padding: 10px 20px;
@@ -192,36 +193,38 @@ main {
 				line-height: 18px;
 				border-radius: 4px;
 				border: none;
+				transition: 0.2s ease-in-out;
 
 				&:hover {
-					background: #0d659d;
+					background: #1d0722;
+					transform: scale(1.1);
 				}
 			}
 
 			& p {
 				margin-bottom: 0;
-				color: #1782c6;
+				color: #2b1055;
 			}
 		}
 	}
 
-	& .publication .comment{
+	& .publication .comment {
 		margin-bottom: 20px;
 		padding-bottom: 20px;
 		border-bottom: 1px solid #cbcbcb;
 
-		& .photo{
+		& .photo {
 			padding-left: 0;
 			margin-right: 15px;
 
-			& a{
+			& a {
 				display: inline-block;
 				width: 40px;
 				height: 40px;
 			}
 		}
 
-		& form textarea{
+		& form textarea {
 			width: 100%;
 			background: #fff;
 			border: 1px solid #cbcbcb;
@@ -234,13 +237,44 @@ main {
 			font-size: 14px;
 		}
 
-		& .answer{
+		& .answer {
 			font-size: 14px;
 			margin-bottom: 10px;
 		}
 
-		& .like-it{
+		& .like-it {
 			font-size: 14px;
+		}
+	}
+
+	& .right-sidebar {
+		& h3 {
+			font-size: 16px;
+			text-align: center;
+		}
+
+		& .ads a {
+			margin-bottom: 15px;
+			display: inline-block;
+
+			& img {
+				width: 100%;
+			}
+		}
+
+		& footer.footerSocial {
+			font-size: 14px;
+
+			& a {
+				color: #2b1055;
+				line-height: 14px;
+				margin-right: 10px;
+			}
+
+			& .copyright {
+				color: #919191;
+				margin-top: 10px;
+			}
 		}
 	}
 }

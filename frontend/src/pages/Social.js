@@ -2,6 +2,7 @@ import React from 'react'
 import '../assets/sass/social/Social.scss'
 import Header from '../components/social/Header'
 import Questions from '../components/social/Questions'
+import Advertising from '../components/social/Advertising'
 
 const Home = () => {
 	return (
@@ -9,7 +10,8 @@ const Home = () => {
 			<Header />
 			<main className="container">
 				<div className="row">
-					<Questions/>
+					<Questions />
+					<Advertising />
 				</div>
 			</main>
 		</div>
