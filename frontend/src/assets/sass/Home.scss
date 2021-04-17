@@ -118,6 +118,7 @@ header {
 		background-color: #fff;
 		color: #2b1055;
 		font-size: 1.5em;
+		cursor: pointer;
 		z-index: 11;
 		transform: translateY(100px);
 	}
@@ -140,65 +141,67 @@ header {
 	}
 }
 
-footer{
+footer {
 	position: relative;
 	background: #2b1055;
 	height: auto;
 	width: 100%;
 	padding-top: 40px;
-	color: #fff;
+	color: rgb(226, 220, 220);
 
 	&::before {
 		content: '';
 		position: absolute;
 		bottom: 0;
 		width: 100%;
-		height: 75px;
+		height: 70vh;
 		background: linear-gradient(to top, #1c0522, transparent);
 		z-index: 1000;
 	}
 
-	& .footer-content{
+	& .footer-content {
+		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		text-align: center;	
+		text-align: center;
+		z-index: 10000;
 
-		& h3{
+		& h3 {
 			font-size: 1.8em;
 			font-weight: 800;
 			text-transform: uppercase;
-			line-height:2em;
+			line-height: 2em;
 		}
 
-		& p{
+		& p {
 			max-width: 500px;
 			margin: 10px auto;
 			line-height: 25px;
 			font-size: 15px;
 		}
 
-		& .socials{
+		& .socials {
 			list-style: none;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			margin: 1em 0 3em 0;
 
-			& li{
+			& li {
 				margin: 0 10px;
 
-				& a{
+				& a {
 					text-decoration: none;
 					color: #fff;
 
-					& i{
+					& i {
 						font-size: 1.3em;
 						transition: 0.5s;
 					}
 
-					&:hover i{
+					&:hover i {
 						color: #2b1055;
 					}
 				}
@@ -206,34 +209,32 @@ footer{
 		}
 	}
 
-	& .footer-bottom{
+	& .footer-bottom {
+		position: relative;
 		background: #2b1055;
 		width: 100%;
 		padding: 20px 0;
 		text-align: center;
+		z-index: 10000;
 
-		& p{
+		& p {
 			font-size: 15px;
 			text-transform: uppercase;
 
-			& span{
-				opacity: .4;
+			& span {
+				opacity: 0.4;
 				font-weight: 500;
 			}
 		}
 	}
 }
 
-
-
-
-
 @media (max-width: 816px) {
 	header ul {
 		display: none;
 	}
 
-	header .logo{
+	header .logo {
 		position: absolute;
 		left: 50%;
 		top: 20%;
@@ -254,7 +255,7 @@ footer{
 }
 
 @media (max-width: 514px) {
-	footer{
+	footer {
 		padding: 0 65px;
 	}
 }

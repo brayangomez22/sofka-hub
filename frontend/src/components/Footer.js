@@ -6,10 +6,7 @@ const Footer = () => {
 		<footer>
 			<div className="footer-content">
 				<h3>SofkaU</h3>
-				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis magnam voluptatum
-					est quod non quibusdam laboriosam natus eius iste accusamus?
-				</p>
+				<p>One for all, all for one</p>
 				<ul className="socials">
 					<li>
 						<a href="">
