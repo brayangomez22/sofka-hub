@@ -10,11 +10,9 @@
 body {
   height: 100%;
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2b1055), to(#7597de));
-  background: linear-gradient(#2b1055, #7597de);
 }
 
-header {
+header.headerHome {
   position: absolute;
   top: 0;
   left: 0;
@@ -31,18 +29,18 @@ header {
           align-items: center;
   z-index: 1000;
 }
-header .logo {
+header.headerHome .logoHome {
   width: 110px;
   height: 50px;
   background: #fff;
   padding: 4px;
   border-radius: 4px;
 }
-header .logo img {
+header.headerHome .logoHome img {
   width: 100%;
   height: 100%;
 }
-header ul {
+header.headerHome ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,11 +51,11 @@ header ul {
       -ms-flex-align: center;
           align-items: center;
 }
-header ul li {
+header.headerHome ul li {
   list-style: none;
   margin-left: 20px;
 }
-header ul li a {
+header.headerHome ul li a {
   text-decoration: none;
   padding: 6px 15px;
   color: #fff;
@@ -65,7 +63,7 @@ header ul li a {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-header ul li a:hover, header ul li a.activeHeader {
+header.headerHome ul li a:hover, header.headerHome ul li a.activeHeader {
   background-color: #fff;
   color: #2b1055;
 }
@@ -85,6 +83,8 @@ header ul li a:hover, header ul li a.activeHeader {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2b1055), to(#7597de));
+  background: linear-gradient(#2b1055, #7597de);
 }
 .container-welcome::before {
   content: "";
@@ -218,12 +218,13 @@ footer .footer-content .socials li a {
   color: #fff;
 }
 footer .footer-content .socials li a i {
-  font-size: 1.3em;
+  font-size: 1.6em;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 footer .footer-content .socials li a:hover i {
-  color: #2b1055;
+  -webkit-transform: rotateZ(360deg) scale(1.5);
+          transform: rotateZ(360deg) scale(1.5);
 }
 footer .footer-bottom {
   position: relative;

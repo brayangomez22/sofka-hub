@@ -4,7 +4,7 @@ const Footer = () => {
 	return (
 		<footer>
 			<div className="footer-content">
-				<h3>SofkaU</h3>
+				<h3>SofkaHub</h3>
 				<p>One for all, all for one</p>
 				<ul className="socials">
 					<li>
@@ -26,7 +26,7 @@ const Footer = () => {
 			</div>
 			<div className="footer-bottom">
 				<p>
-					copyright &copy; 2021 SofkaU. Designed by <span>Brayan and Jacobo</span>
+					copyright &copy; 2021 SofkaHub. Designed by <span>Brayan and Jacobo</span>
 				</p>
 			</div>
 		</footer>

@@ -4,7 +4,7 @@ import Header from '../components/social/Header'
 
 const Home = () => {
 	return (
-		<div>
+		<div className="social">
 			<Header />
 		</div>
 	)

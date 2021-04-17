@@ -5,8 +5,8 @@ import logo from '../../assets/img/home/logo.png'
 
 const Header = () => {
 	return (
-		<header>
-			<Link className="logo" to="/">
+		<header className="headerHome">
+			<Link className="logoHome" to="/">
 				<img src={logo} alt="logo" />
 			</Link>
 			<ul>

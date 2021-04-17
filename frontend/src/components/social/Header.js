@@ -6,17 +6,17 @@ import person from '../../assets/img/social/persona2.jpg'
 const Social = () => {
 	return (
 		<header>
-			<div class="container">
-				<div class="row">
-					<div class="col-auto d-none d-md-block logo">
+			<div className="container">
+				<div className="row">
+					<div className="col-auto d-none d-md-block logo">
 						<a href="#">
 							<img src={logo} alt="logo" />
 						</a>
 					</div>
-					<div class="col-12 col-sm-8 col-lg-6 order-2 order-sm-1 buscar mb-2 mb-sm-0">
+					<div className="col-12 col-sm-8 col-lg-6 order-2 order-sm-1 buscar mb-2 mb-sm-0">
 						<form action="">
-							<div class="row no-gutters">
-								<div class="col-10">
+							<div className="row no-gutters">
+								<div className="col-10">
 									<input
 										type="text"
 										name=""
@@ -24,26 +24,26 @@ const Social = () => {
 										placeholder="Amigos, Lugares y cosas que te gustan"
 									/>
 								</div>
-								<div class="col-2">
+								<div className="col-2">
 									<button>
-										<i class="icon-search"></i>
+										<i className="fas fa-search"></i>
 									</button>
 								</div>
 							</div>
 						</form>
 					</div>
 
-					<nav class="col-12 col-sm-3 col-lg-2 order-1 order-sm-2 menu d-flex justify-content-between ml-auto mb-2 mb-sm-0">
+					<nav className="col-12 col-sm-3 col-lg-2 order-1 order-sm-2 menu d-flex justify-content-between ml-auto mb-2 mb-sm-0">
 						<a href="#">
-							<i class="icon-users"></i>
+							<i className="fas fa-users"></i>
 						</a>
 						<a href="#">
-							<i class="icon-bell-alt"></i>
+							<i className="fas fa-bell"></i>
 						</a>
 						<a href="#">
-							<i class="icon-chat"></i>
+							<i className="fas fa-comments"></i>
 						</a>
-						<a href="#" class="imagen">
+						<a href="#" className="imagen">
 							<img src={person} width="22" height="22" alt="person" />
 						</a>
 					</nav>
