@@ -10,7 +10,6 @@
 body {
 	height: 100%;
 	min-height: 100vh;
-	background: linear-gradient(#2b1055, #7597de);
 }
 
 header {
@@ -72,6 +71,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+	background: linear-gradient(#2b1055, #7597de);
 
 	&::before {
 		content: '';

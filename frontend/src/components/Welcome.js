@@ -1,17 +1,15 @@
-import React, { useRef, useState } from 'react'
+import React from 'react'
 
 import stars from '../assets/img/home/stars.png'
 import moon from '../assets/img/home/moon.png'
 import mountains_behind from '../assets/img/home/mountains_behind.png'
 import mountains_front from '../assets/img/home/mountains_front.png'
-import { Link } from 'react-router-dom'
 
 import firebase from 'firebase/app'
-import 'firebase/firestore'
 import 'firebase/auth'
 
 import { useAuthState } from 'react-firebase-hooks/auth'
-import { useCollectionData } from 'react-firebase-hooks/firestore'
+import { useHistory } from 'react-router-dom';
 
 firebase.initializeApp({
 	apiKey: 'AIzaSyAw-M1yiq8w243qMKXGrYg7trP1spBxBqM',
@@ -23,16 +21,18 @@ firebase.initializeApp({
 	measurementId: 'G-575ND06879',
 })
 
-const auth = firebase.auth()
-const firestore = firebase.firestore()
+const auth = firebase.auth();
 
 const Welcome = () => {
+	const history = useHistory();
 	const [user] = useAuthState(auth)
+	console.log(user)
 
 	const signInWithGoogle = () => {
 		const provider = new firebase.auth.GoogleAuthProvider()
-		auth.signInWithPopup(provider)
+		auth.signInWithPopup(provider);
 	}
+	if(user) history.push('/social');
 
 	return (
 		<section className="container-welcome">
