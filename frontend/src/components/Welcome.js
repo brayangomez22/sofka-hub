@@ -13,7 +13,9 @@ const Welcome = () => {
 			<img src={moon} id="moon" alt="moon" />
 			<img src={mountains_behind} id="mountains_behind" alt="mountains_behind" />
 			<h2 id="text">Welcome to SofkaHub</h2>
-			<Link className="btn-start" to="/PENE">Start</Link>
+			<Link className="btn-start" id="btn" to="/signIn">
+				Start
+			</Link>
 			<img src={mountains_front} id="mountains_front" alt="mountains_front" />
 		</section>
 	)
