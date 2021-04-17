@@ -1,22 +1,22 @@
 import React from 'react'
 
-import ad1 from '../../assets/img/social/ad1.jpeg'
-import ad2 from '../../assets/img/social/ad2.jpeg'
-import ad3 from '../../assets/img/social/ad3.jpeg'
+import Ad1 from '../../assets/img/social/ad1.jpg'
+import Ad2 from '../../assets/img/social/ad2.jpg'
+import Ad3 from '../../assets/img/social/ad3.jpg'
 
 const Advertising = () => {
 	return (
-		<div class="col-3 right-sidebar d-none d-lg-block">
+		<div className="col-3 right-sidebar d-none d-lg-block">
 			<h3>Publicidad</h3>
-			<div class="ads">
+			<div className="ads">
 				<a href="#">
-					<img src={ad1} width="300" alt="ad1" />
+					<img src={Ad1} width="300" alt="ad1" />
 				</a>
 				<a href="#">
-					<img src={ad2} width="300" alt="ad2" />
+					<img src={Ad2} width="300" alt="ad2" />
 				</a>
 				<a href="#">
-					<img src={ad3} width="300" alt="ad3" />
+					<img src={Ad3} width="300" alt="ad3" />
 				</a>
 			</div>
 
@@ -24,7 +24,7 @@ const Advertising = () => {
 				<a href="#">Privacidad</a>
 				<a href="#">Condiciones</a>
 				<a href="#">Publicidad</a>
-				<p class="copyright">Red Social © 2021</p>
+				<p className="copyright">Red Social © 2021</p>
 			</footer>
 		</div>
 	)
