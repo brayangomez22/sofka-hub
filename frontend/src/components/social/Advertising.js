@@ -7,7 +7,7 @@ import Ad3 from '../../assets/img/social/ad3.jpg'
 const Advertising = () => {
 	return (
 		<div className="col-3 right-sidebar d-none d-lg-block">
-			<h3>Publicidad</h3>
+			<h3>Publicity</h3>
 			<div className="ads">
 				<a href="#">
 					<img src={Ad1} width="300" alt="ad1" />
@@ -21,10 +21,7 @@ const Advertising = () => {
 			</div>
 
 			<footer className="footerSocial">
-				<a href="#">Privacidad</a>
-				<a href="#">Condiciones</a>
-				<a href="#">Publicidad</a>
-				<p className="copyright">Red Social © 2021</p>
+				<p className="copyright">SofkaHub © 2021</p>
 			</footer>
 		</div>
 	)

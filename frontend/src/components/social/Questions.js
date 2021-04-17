@@ -1,10 +1,8 @@
 import React from 'react'
-import Persona1 from '../../assets/img/social/persona1.jpg'
 import Persona2 from '../../assets/img/social/persona2.jpg'
 import Persona5 from '../../assets/img/social/persona5.jpg'
-import Paisaje1 from '../../assets/img/social/paisaje1.jpg'
-import Paisaje2 from '../../assets/img/social/paisaje2.jpg'
 import { auth } from '../../functions/signIn';
+
 const Questions = () => {
 	const { photoURL } = auth.currentUser || { photoURL: "" };
 	return (
@@ -18,21 +16,21 @@ const Questions = () => {
 					</div>
 					<div className="col">
 						<form action="">
-							<textarea name="mensaje" id="" placeholder="Publicar Mensaje"></textarea>
+							<textarea name="mensaje" id="" placeholder="What do you want to know?"></textarea>
 							<div className="container-buttons d-flex justify-content-between">
 								<div className="media">
-									<a href="#">
+									<p>
 										<i className="fas fa-images"></i>
-									</a>
-									<a href="#">
+									</p>
+									<p >
 										<i className="fas fa-play"></i>
-									</a>
-									<a href="#">
+									</p>
+									<p>
 										<i className="fas fa-music"></i>
-									</a>
+									</p>
 								</div>
 								<div>
-									<button>Publicar</button>
+									<button>Publish</button>
 								</div>
 							</div>
 						</form>

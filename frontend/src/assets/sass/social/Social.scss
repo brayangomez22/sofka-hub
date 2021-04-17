@@ -63,11 +63,23 @@
 	& .menu {
 		padding: 0;
 
-		& a {
+		& a, p {
 			color: rgba(255, 255, 255, 0.8);
+			margin: 0;
 
 			&:hover {
 				color: rgba(255, 255, 255, 1);
+				cursor: pointer;
+			}
+		}
+
+		& a {
+			color: rgba(255, 255, 255, 0.8);
+			margin: 0;
+
+			&:hover {
+				color: rgba(255, 255, 255, 1);
+				cursor: pointer;
 			}
 		}
 	}
@@ -122,12 +134,14 @@ main {
 			padding: 20px 0;
 			border-bottom: 1px solid #c7c8ca;
 
-			& a {
+			& a, p {
+				margin: 0;
 				color: #8d8d8d;
 				font-size: 20px;
 				margin-right: 10px;
 
 				&:hover {
+					cursor: pointer;
 					color: #3d3d3d;
 				}
 			}

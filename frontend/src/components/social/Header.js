@@ -2,20 +2,21 @@ import React from 'react'
 
 import logo from '../../assets/img/social/logo.svg'
 import { auth } from '../../functions/signIn'
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { useHistory } from 'react-router-dom'
 
 const Social = () => {
 	const history = useHistory()
 
-	const {  displayName, photoURL, email } = auth.currentUser || {uid:"", displayName:"", photoURL:"", email:""}
+	const { displayName, photoURL, email } = auth.currentUser || { uid: "", displayName: "", photoURL: "", email: "" }
 
 	const signOut = () => {
 		auth.signOut()
+		window.location.reload();
 	}
-
 	if (!auth.currentUser) history.push('/')
+
 
 	return (
 		<header className="header-social">
@@ -34,7 +35,7 @@ const Social = () => {
 										type="text"
 										name=""
 										id=""
-										placeholder="Amigos, Lugares y cosas que te gustan"
+										placeholder="The solution to your questions..."
 									/>
 								</div>
 								<div className="col-2">
@@ -47,15 +48,15 @@ const Social = () => {
 					</div>
 
 					<nav className="col-12 col-sm-3 col-lg-2 order-1 order-sm-2 menu d-flex justify-content-between ml-auto mb-2 mb-sm-0">
-						<a href="#">
+						<p>
 							<i className="fas fa-users"></i>
-						</a>
-						<a href="#">
+						</p>
+						<p >
 							<i className="fas fa-bell"></i>
-						</a>
-						<a href="#">
+						</p>
+						<p>
 							<i className="fas fa-comments"></i>
-						</a>
+						</p>
 
 						<div className="dropdown">
 							<button
@@ -85,9 +86,9 @@ const Social = () => {
 							</ul>
 						</div>
 
-						<a href="#" onClick={signOut}>
+						<p onClick={signOut}>
 							<i className="fas fa-sign-out-alt"></i>
-						</a>
+						</p>
 					</nav>
 				</div>
 			</div>
