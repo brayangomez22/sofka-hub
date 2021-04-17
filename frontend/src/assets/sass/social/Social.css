@@ -236,4 +236,23 @@ main .right-sidebar footer.footerSocial a {
 main .right-sidebar footer.footerSocial .copyright {
   color: #919191;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 575px) {
+  header.header-social .menu {
+    padding: 15px 15px 0 15px;
+  }
+
+  main .main-content .publication .photo {
+    padding-right: 0;
+  }
+  main .main-content .publication .photo a {
+    width: 40px;
+    height: 40px;
+  }
+
+  main .main-content .post .photo,
+main .main-content .publication .photo {
+    display: none;
+  }
 }/*# sourceMappingURL=Social.css.map */

@@ -10,18 +10,6 @@ const Questions = () => {
 		<div className="col main-content">
 			<div className="post">
 				<div className="row">
-					<div className="col">
-						<a
-							href="#"
-							className="btn-menu d-md-none d-flex justify-content-between"
-							id="btn-menu"
-						>
-							<span>Menu</span>
-							<i className="icon-menu"></i>
-						</a>
-					</div>
-				</div>
-				<div className="row">
 					<div className="col-auto photo">
 						<a href="#">
 							<img src={Persona2} alt="" />
