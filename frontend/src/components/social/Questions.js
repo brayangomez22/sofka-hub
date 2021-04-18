@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import Persona2 from '../../assets/img/social/persona2.jpg'
 import Persona5 from '../../assets/img/social/persona5.jpg'
 import { auth, db } from '../../functions/signIn'
-import Question from './Question';
+import Question from './Question'
 import { useCollectionData } from 'react-firebase-hooks/firestore'
 import firebase from 'firebase/app'
 
@@ -25,6 +25,7 @@ const Questions = () => {
 		displayName: '',
 		text: '',
 		uid: '',
+		likes: 0,
 		response: [response],
 	})
 
@@ -46,17 +47,18 @@ const Questions = () => {
 			text: formValue,
 			response: [],
 			createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+			likes: 0,
 		})
 
 		setFormValue('')
 	}
 
-	const dummy = useRef();
+	const dummy = useRef()
 
 	useEffect(() => {
-		dummy.current.scrollIntoView({ behavior: 'smooth' });
-	  });
-	  
+		dummy.current.scrollIntoView({ behavior: 'smooth' })
+	})
+
 	return (
 		<div className="col main-content">
 			<div className="post">
@@ -97,7 +99,7 @@ const Questions = () => {
 					</div>
 				</div>
 			</div>
-			{questions && questions.map(quest=> <Question key={quest.id} question={quest}/>)}
+			{questions && questions.map((quest) => <Question key={quest.id} question={quest} />)}
 			<span ref={dummy}></span>
 		</div>
 	)
