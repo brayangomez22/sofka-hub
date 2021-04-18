@@ -13,7 +13,7 @@
 	}
 }
 
-.dropdown-item{
+.dropdown-item {
 	color: #fff !important;
 
 	&:hover {
@@ -63,7 +63,8 @@
 	& .menu {
 		padding: 0;
 
-		& a, p {
+		& a,
+		p {
 			color: rgba(255, 255, 255, 0.8);
 			margin: 0;
 
@@ -135,7 +136,8 @@ main {
 			padding: 20px 0;
 			border-bottom: 1px solid #c7c8ca;
 
-			& a, p {
+			& a,
+			p {
 				margin: 0;
 				color: #8d8d8d;
 				font-size: 20px;
@@ -260,6 +262,11 @@ main {
 			min-width: 100%;
 			max-width: 100%;
 			font-size: 14px;
+		}
+
+		& form button {
+			background: #2b1055;
+			color: #fff;
 		}
 
 		& .answer {

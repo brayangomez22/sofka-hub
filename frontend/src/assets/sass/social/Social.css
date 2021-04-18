@@ -10,6 +10,9 @@
   text-decoration: underline;
 }
 
+.dropdown-item {
+  color: #fff !important;
+}
 .dropdown-item:hover {
   color: #111 !important;
   text-decoration: none;
@@ -52,11 +55,23 @@
 .header-social .menu {
   padding: 0;
 }
+.header-social .menu a,
+.header-social .menu p {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+.header-social .menu a:hover,
+.header-social .menu p:hover {
+  color: white;
+  cursor: pointer;
+}
 .header-social .menu a {
   color: rgba(255, 255, 255, 0.8);
+  margin: 0;
 }
 .header-social .menu a:hover {
   color: white;
+  cursor: pointer;
 }
 .header-social .image {
   display: inline-block;
@@ -64,6 +79,7 @@
   height: 27px;
   overflow: hidden;
   border-radius: 50%;
+  border: none;
 }
 .header-social .image img {
   width: 100%;
@@ -72,11 +88,12 @@
 
 main {
   padding-top: 20px;
+  min-height: 93vh;
 }
 main .main-content .post {
   margin-bottom: 20px;
 }
-main .main-content .post .photo a {
+main .main-content .post .photo p {
   width: 60px;
   height: 60px;
   display: inline-block;
@@ -103,12 +120,16 @@ main .main-content .post form .container-buttons {
   padding: 20px 0;
   border-bottom: 1px solid #c7c8ca;
 }
-main .main-content .post form .container-buttons a {
+main .main-content .post form .container-buttons a,
+main .main-content .post form .container-buttons p {
+  margin: 0;
   color: #8d8d8d;
   font-size: 20px;
   margin-right: 10px;
 }
-main .main-content .post form .container-buttons a:hover {
+main .main-content .post form .container-buttons a:hover,
+main .main-content .post form .container-buttons p:hover {
+  cursor: pointer;
   color: #3d3d3d;
 }
 main .main-content .post form button {
@@ -211,6 +232,10 @@ main .publication .comment form textarea {
   min-width: 100%;
   max-width: 100%;
   font-size: 14px;
+}
+main .publication .comment form button {
+  background: #2b1055;
+  color: #fff;
 }
 main .publication .comment .answer {
   font-size: 14px;

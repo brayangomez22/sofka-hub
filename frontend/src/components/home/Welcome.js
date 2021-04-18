@@ -5,13 +5,10 @@ import moon from '../../assets/img/home/moon.png'
 import mountains_behind from '../../assets/img/home/mountains_behind.png'
 import mountains_front from '../../assets/img/home/mountains_front.png'
 
-import firebase from '../../functions/firebaseInit'
-import signInWithGoogle, {auth} from '../../functions/signIn'
+import signInWithGoogle, { auth } from '../../functions/signIn'
 
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { useHistory } from 'react-router-dom'
-
-
 
 const Welcome = () => {
 	const history = useHistory()
