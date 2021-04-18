@@ -1,4 +1,6 @@
 import React from 'react'
+import '../assets/sass/Error404.scss'
+import {Link} from 'react-router-dom';
 
 const Error404 = () => {
     return (
@@ -19,9 +21,11 @@ const Error404 = () => {
                 <div id="info">
                     We can't seem to find the page you're looking for.
                 </div>
-                <div id="btn-err">
-                    Back to site
-                </div>
+                <Link to="/" style={{textDecoration:'none'}}>
+                    <div id="btn-err">
+                        Back to site
+                    </div>
+                </Link>
             </div>
             <div id="ring">
 
