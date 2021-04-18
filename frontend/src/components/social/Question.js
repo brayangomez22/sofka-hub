@@ -1,11 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { auth, db } from '../../functions/signIn'
 const Question = ({ question }) => {
+	const [bool, setBool] = useState(true);
+
 	const { photoURL, displayName, text, id, likes } = question
 
 	const questionsRef = db.collection('questions')
-
-	console.log(likes)
+	
+	const decorationLike={
+		color: '#aaaaaa'
+	}
 
 	return (
 		<div className="publication">
@@ -24,12 +28,20 @@ const Question = ({ question }) => {
 						<div className="box-buttons d-flex justify-content-between align-items-center">
 							<button
 								onClick={async () => {
-									await questionsRef.doc(id).update({
-										likes: likes + 1,
-									})
+									if(bool){
+										await questionsRef.doc(id).update({
+											likes: likes + 1,
+										})
+										setBool(false);
+									} else {
+										await questionsRef.doc(id).update({
+											likes: likes - 1,
+										})
+										setBool(true);
+									}
 								}}
 							>
-								<i className="fas fa-thumbs-up"></i>
+								<i style={bool? {}: decorationLike} className="fas fa-thumbs-up"></i>
 							</button>
 							<p>
 								{likes} <i className="fas fa-thumbs-up"></i>
