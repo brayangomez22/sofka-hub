@@ -30,15 +30,8 @@ const Creators = () => {
 							<a href="#">
 								<i class="fab fa-instagram"></i>
 							</a>
-							<a href="#">
-								<i class="fas fa-link"></i>
-							</a>
 						</div>
 
-						<div class="videos">
-							190 <span>Videos</span>
-						</div>
-						<div class="border"></div>
 						<div class="subscribers">
 							204K <span>Subscribers</span>
 						</div>
@@ -71,15 +64,8 @@ const Creators = () => {
 							<a href="#">
 								<i class="fab fa-instagram"></i>
 							</a>
-							<a href="#">
-								<i class="fas fa-link"></i>
-							</a>
 						</div>
 
-						<div class="videos">
-							190 <span>Videos</span>
-						</div>
-						<div class="border"></div>
 						<div class="subscribers">
 							204K <span>Subscribers</span>
 						</div>

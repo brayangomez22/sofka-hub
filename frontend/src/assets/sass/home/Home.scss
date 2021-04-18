@@ -240,7 +240,7 @@ header.headerHome {
 
 				& .tag {
 					font-size: 18px;
-					color: #222;
+					color: #f1f1f1;
 				}
 			}
 
@@ -405,11 +405,11 @@ footer.footerHome {
 }
 
 @media (max-width: 816px) {
-	header ul {
+	header.headerHome ul {
 		display: none;
 	}
 
-	header .logo {
+	header.headerHome .logoHome {
 		position: absolute;
 		left: 50%;
 		top: 20%;
@@ -430,7 +430,7 @@ footer.footerHome {
 }
 
 @media (max-width: 514px) {
-	footer {
+	footer.footerHome {
 		padding: 0 65px;
 	}
 }
