@@ -39,6 +39,13 @@ header.headerHome .logoHome {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+header.headerHome .logoHome:hover {
+  text-decoration: none;
+  -webkit-transform: rotateZ(-10deg);
+          transform: rotateZ(-10deg);
 }
 header.headerHome .logoHome img {
   width: 100%;
@@ -340,21 +347,11 @@ header.headerHome ul li a:hover, header.headerHome ul li a.activeHeader {
 }
 footer.footerHome {
   position: relative;
-  background: #2b1055;
+  background: #261641;
   height: auto;
   width: 100%;
   padding-top: 40px;
   color: #e2dcdc;
-}
-footer.footerHome::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 70vh;
-  background: -webkit-gradient(linear, left bottom, left top, from(#1c0522), to(transparent));
-  background: linear-gradient(to top, #1c0522, transparent);
-  z-index: 1000;
 }
 footer.footerHome .footer-content {
   position: relative;
@@ -438,11 +435,13 @@ footer.footerHome .footer-bottom p span {
   }
 
   header.headerHome .logoHome {
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 674px) {
@@ -457,6 +456,6 @@ footer.footerHome .footer-bottom p span {
 }
 @media (max-width: 514px) {
   footer.footerHome {
-    padding: 0 65px;
+    padding: 65px;
   }
 }/*# sourceMappingURL=Home.css.map */

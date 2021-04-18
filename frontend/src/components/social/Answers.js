@@ -10,7 +10,7 @@ const Answers = ({ response }) => {
 					</a>
 				</div>
 				<div className="col">
-					<p>{response.displayName}</p>
+					<p className="answer-question">{response.displayName}</p>
 					<p className="answer">{response.text}</p>
 				</div>
 			</div>

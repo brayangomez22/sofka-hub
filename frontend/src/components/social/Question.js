@@ -26,9 +26,7 @@ const Question = ({ question }) => {
 				</div>
 				<div className="col">
 					<div className="post">
-						<a href="#" className="name">
-							{displayName}
-						</a>
+						<small className="name">{displayName}</small>
 						<p className="text">{text}</p>
 						<div className="box-buttons d-flex justify-content-between align-items-center">
 							<button
@@ -66,8 +64,8 @@ const Question = ({ question }) => {
 							</div>
 							<div className="col">
 								<form
-									onSubmit={async e => {
-										e.preventDefault();
+									onSubmit={async (e) => {
+										e.preventDefault()
 										if (response.length === 0) {
 											await questionsRef.doc(id).update({
 												response: [
@@ -103,11 +101,7 @@ const Question = ({ question }) => {
 											setFormValue(e.target.value)
 										}}
 									></textarea>
-									<button
-										type="submit"
-										style={{ display: 'block' }}
-										className="btn"
-									>
+									<button type="submit" style={{ display: 'block' }} className="btn">
 										Reply
 									</button>
 								</form>

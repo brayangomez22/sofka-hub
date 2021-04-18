@@ -31,6 +31,12 @@ header.headerHome {
 		width: 110px;
 		height: 50px;
 		display: flex;
+		transition: 0.3s ease-in-out;
+
+		&:hover {
+			text-decoration: none;
+			transform: rotateZ(-10deg);
+		}
 
 		& img {
 			width: 100%;
@@ -318,21 +324,11 @@ header.headerHome {
 
 footer.footerHome {
 	position: relative;
-	background: #2b1055;
+	background: #261641;
 	height: auto;
 	width: 100%;
 	padding-top: 40px;
 	color: rgb(226, 220, 220);
-
-	&::before {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		height: 70vh;
-		background: linear-gradient(to top, #1c0522, transparent);
-		z-index: 1000;
-	}
 
 	& .footer-content {
 		position: relative;
@@ -410,10 +406,9 @@ footer.footerHome {
 	}
 
 	header.headerHome .logoHome {
-		position: absolute;
-		left: 50%;
-		top: 20%;
-		transform: translateX(-50%);
+		margin: auto;
+		display: flex;
+		justify-content: center;
 	}
 }
 
@@ -431,6 +426,6 @@ footer.footerHome {
 
 @media (max-width: 514px) {
 	footer.footerHome {
-		padding: 0 65px;
+		padding: 65px;
 	}
 }

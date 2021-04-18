@@ -281,8 +281,13 @@ main .right-sidebar footer.footerSocial .copyright {
     height: 40px;
   }
 
-  main .main-content .post .photo,
-main .main-content .publication .photo {
+  main .main-content .publication .name,
+main .main-content .publication .answer-question,
+main .main-content .publication .answer {
+    font-size: 14px;
+  }
+
+  main .main-content .post .photo {
     display: none;
   }
 }/*# sourceMappingURL=Social.css.map */
