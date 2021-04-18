@@ -66,11 +66,36 @@ const Question = ({ question }) => {
 							</div>
 							<div className="col">
 								<form
-									onSubmit={(e) => {
-										e.preventDefault()
+									onSubmit={async e => {
+										e.preventDefault();
+										if (response.length === 0) {
+											await questionsRef.doc(id).update({
+												response: [
+													{
+														text: formValue,
+														photoURL: auth.currentUser.photoURL,
+														displayName: auth.currentUser.displayName,
+														uid: auth.currentUser.uid,
+													},
+												],
+											})
+										} else {
+											response.unshift({
+												text: formValue,
+												photoURL: auth.currentUser.photoURL,
+												displayName: auth.currentUser.displayName,
+												uid: auth.currentUser.uid,
+											})
+											await questionsRef.doc(id).update({
+												response: response,
+											})
+										}
+										setFormValue('')
 									}}
 								>
 									<textarea
+										value={formValue}
+										required
 										name=""
 										id=""
 										placeholder="comment"
@@ -79,30 +104,6 @@ const Question = ({ question }) => {
 										}}
 									></textarea>
 									<button
-										onClick={async () => {
-											if (response.length === 0) {
-												await questionsRef.doc(id).update({
-													response: [
-														{
-															text: formValue,
-															photoURL: auth.currentUser.photoURL,
-															displayName: auth.currentUser.displayName,
-															uid: auth.currentUser.uid,
-														},
-													],
-												})
-											} else {
-												response.push({
-													text: formValue,
-													photoURL: auth.currentUser.photoURL,
-													displayName: auth.currentUser.displayName,
-													uid: auth.currentUser.uid,
-												})
-												await questionsRef.doc(id).update({
-													response: response,
-												})
-											}
-										}}
 										type="submit"
 										style={{ display: 'block' }}
 										className="btn"

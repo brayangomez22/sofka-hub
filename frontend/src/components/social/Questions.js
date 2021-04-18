@@ -15,7 +15,7 @@ const Questions = () => {
 
 	const questionsRef = db.collection('questions')
 
-	const query = questionsRef.orderBy('createdAt')
+	const query = questionsRef.orderBy('createdAt', 'desc')
 
 	const [questions] = useCollectionData(query, { idField: 'id' })
 
@@ -47,6 +47,7 @@ const Questions = () => {
 					<div className="col">
 						<form onSubmit={handleOnSubmit}>
 							<textarea
+								required
 								name="question"
 								id=""
 								placeholder="What do you want to know?"
