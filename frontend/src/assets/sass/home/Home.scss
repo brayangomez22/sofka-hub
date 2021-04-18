@@ -7,6 +7,10 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	height: 100%;
 	min-height: 100vh;
@@ -26,13 +30,20 @@ header.headerHome {
 	& .logoHome {
 		width: 110px;
 		height: 50px;
-		background: #fff;
-		padding: 4px;
-		border-radius: 4px;
+		display: flex;
 
 		& img {
 			width: 100%;
 			height: 100%;
+		}
+
+		& span {
+			display: flex;
+			align-items: center;
+			color: #fff;
+			font-weight: 800;
+			font-size: 25px;
+			margin-left: 5px;
 		}
 	}
 
@@ -103,11 +114,10 @@ header.headerHome {
 
 	& #text {
 		position: absolute;
-		right: -400px;
 		color: #fff;
 		white-space: nowrap;
 		font-size: 5.5vw;
-		z-index: 9;
+		z-index: 19;
 	}
 
 	& .btn-start {
@@ -138,6 +148,171 @@ header.headerHome {
 	& p {
 		font-size: 1.7em;
 		color: #fff;
+	}
+}
+
+.container-creators {
+	background: #1c0522;
+	height: auto;
+	padding: 20px 0 70px 0;
+
+	& h2 {
+		text-align: center;
+		font-size: 2.2em;
+		font-weight: 700;
+		color: #fff;
+		margin-bottom: 30px;
+	}
+
+	& .container-creators-card {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+		& .profile-card {
+			width: 420px;
+			overflow: hidden;
+			text-align: center;
+			position: relative;
+			box-shadow: 0 0 10px #00000070;
+			margin: 15px;
+
+			& .top-section {
+				padding: 60px 40px;
+				background: #2c2c54aa;
+
+				& .message,
+				& .notif {
+					position: absolute;
+					top: 40px;
+					font-size: 20px;
+					cursor: pointer;
+					color: #ffffff50;
+				}
+
+				& .message {
+					right: 40px;
+				}
+
+				& .notif {
+					left: 40px;
+				}
+
+				& .pic {
+					width: 150px;
+					height: 150px;
+					margin: auto;
+					margin-bottom: 20px;
+					border: 2px solid #2c3e50;
+					border-radius: 50%;
+					padding: 8px;
+					position: relative;
+
+					&:after {
+						content: '';
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						border: 1px solid #2c3e50;
+						left: 0;
+						top: 0;
+						box-sizing: border-box;
+						border-radius: 50%;
+						animation: wave 1.5s infinite linear;
+					}
+
+					& img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						object-position: top;
+						border-radius: 50%;
+					}
+				}
+
+				& .name {
+					color: #f1f1f1;
+					font-size: 28px;
+					letter-spacing: 2px;
+					text-transform: uppercase;
+				}
+
+				& .tag {
+					font-size: 18px;
+					color: #222;
+				}
+			}
+
+			& .bottom-section {
+				background: #f1f1f1;
+				padding: 60px 40px;
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 28px;
+				text-transform: uppercase;
+
+				& .border {
+					width: 1px;
+					height: 20px;
+					background: #bbb;
+					margin: 0 30px;
+				}
+
+				& span {
+					font-size: 14px;
+					display: block;
+				}
+
+				& .social-media {
+					position: absolute;
+					width: 100%;
+					top: -30px;
+					left: 0;
+					z-index: 1;
+
+					& i {
+						width: 60px;
+						height: 60px;
+						background: #2c3e50;
+						border-radius: 50%;
+						color: #f1f1f1;
+						font-size: 20px;
+						line-height: 60px !important;
+						margin: 0 10px;
+						position: relative;
+
+						&:after {
+							content: '';
+							width: 100%;
+							height: 100%;
+							position: absolute;
+							background: #2c3e50;
+							left: 0;
+							top: 0;
+							box-sizing: border-box;
+							border-radius: 50%;
+							z-index: -1;
+							transition: 0.4s linear;
+						}
+
+						&:hover:after {
+							transform: scale(1.4);
+							opacity: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@keyframes wave {
+	to {
+		transform: scale(1.5);
+		opacity: 0;
 	}
 }
 

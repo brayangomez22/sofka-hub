@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import logo from '../../assets/img/home/logo.png'
+import logo from '../../assets/img/social/logo.svg'
 
 const Header = () => {
 	return (
 		<header className="headerHome">
 			<Link className="logoHome" to="/">
-				<img src={logo} alt="logo" />
+				<img src={logo} alt="logo" /> <span>SofkaHub</span>
 			</Link>
 			<ul>
 				<li>
@@ -16,16 +16,10 @@ const Header = () => {
 					</a>
 				</li>
 				<li>
-					<a href="/">Abaut</a>
+					<a href="#about">Abaut</a>
 				</li>
 				<li>
-					<a href="/">Abaut</a>
-				</li>
-				<li>
-					<a href="/">Abaut</a>
-				</li>
-				<li>
-					<a href="/">Abaut</a>
+					<a href="#creators">Creators</a>
 				</li>
 			</ul>
 		</header>
