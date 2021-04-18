@@ -8,7 +8,7 @@ const Creators = () => {
 		<section className="container-creators" id="creators">
 			<h2>SofkaHub Creators</h2>
 			<div className="container-creators-card">
-				<div data-aos="zoom-out-right" class="profile-card">
+				<div class="profile-card">
 					<div class="top-section">
 						<i class="message fas fa-envelope"></i>
 						<i class="notif fas fa-bell"></i>
@@ -42,7 +42,7 @@ const Creators = () => {
 					</div>
 				</div>
 
-				<div data-aos="zoom-out-left" class="profile-card">
+				<div class="profile-card">
 					<div class="top-section">
 						<i class="message fas fa-envelope"></i>
 						<i class="notif fas fa-bell"></i>

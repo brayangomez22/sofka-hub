@@ -5,7 +5,7 @@ import logo from '../../assets/img/social/logo.svg'
 
 const Header = () => {
 	return (
-		<header data-aos="fade-down" className="headerHome">
+		<header className="headerHome">
 			<Link className="logoHome" to="/">
 				<img src={logo} alt="logo" /> <span>SofkaHub</span>
 			</Link>

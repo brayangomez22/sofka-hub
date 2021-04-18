@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
 	return (
 		<footer className="footerHome">
-			<div data-aos="fade-down" className="footer-content">
+			<div className="footer-content">
 				<h3>SofkaHub</h3>
 				<p>One for all, all for one</p>
 				<ul className="socials">
