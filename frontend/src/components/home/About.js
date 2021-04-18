@@ -3,8 +3,8 @@ import React from 'react'
 const About = () => {
 	return (
 		<section className="about" id="about">
-			<h2>If you are a lover of the night, this is your place ...</h2>
-			<p>
+			<h2 data-aos="zoom-out-down">If you are a lover of the night, this is your place ...</h2>
+			<p data-aos="zoom-out-down">
 				Something that has always characterized the Sofkians is that they do whatever it takes
 				to keep their word and their responsibilities. This does not always go quite right,
 				because there are several tasks that go over the budgeted time and, strangely, they end

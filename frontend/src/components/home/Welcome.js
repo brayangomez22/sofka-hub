@@ -21,7 +21,7 @@ const Welcome = () => {
 			<img src={stars} id="stars" alt="stars" />
 			<img src={moon} id="moon" alt="moon" />
 			<img src={mountains_behind} id="mountains_behind" alt="mountains_behind" />
-			<h2 id="text">Welcome to SofkaHub</h2>
+			<h2 data-aos="fade-down" id="text">Welcome to SofkaHub</h2>
 			<p className="btn-start" id="btn" onClick={signInWithGoogle}>
 				Start
 			</p>

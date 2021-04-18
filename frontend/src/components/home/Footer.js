@@ -3,23 +3,23 @@ import React from 'react'
 const Footer = () => {
 	return (
 		<footer className="footerHome">
-			<div className="footer-content">
+			<div data-aos="fade-down" className="footer-content">
 				<h3>SofkaHub</h3>
 				<p>One for all, all for one</p>
 				<ul className="socials">
 					<li>
-						<a href="">
+						<a href="https://www.facebook.com/sofkatech" target="blank">
 							<i className="fab fa-facebook-square"></i>
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="https://www.linkedin.com/company/sofka-technologies" target="blank">
 							<i className="fa fa-linkedin"></i>
 						</a>
 					</li>
 					<li>
-						<a href="">
-							<i className="fa fa-twitter"></i>
+						<a href="https://www.instagram.com/sofka_technologies" target="blank">
+							<i className="fa fa-instagram"></i>
 						</a>
 					</li>
 				</ul>

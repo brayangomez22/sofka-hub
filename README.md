@@ -50,4 +50,5 @@ Mucha suerte.
 ## Planning ##
 
 
-![planning](https://github.com/brayangomez22/SofkaHub/blob/master/frontend/src/assets/img/planning.jpeg)
+![planning-siderales](https://github.com/brayangomez22/SofkaHub/blob/master/frontend/src/assets/img/planning.jpeg)
+![planning-github](https://gitlab.sideralis.co/gomezmancobrayanalexander/32ade1c125c24d0d8d36331f4bf5caad/-/blob/master/frontend/src/assets/img/planning.jpeg)
