@@ -17,6 +17,8 @@ body {
 	overflow-x: hidden;
 }
 
+/*---HEADER----*/
+
 header.headerHome {
 	position: absolute;
 	top: 0;
@@ -80,6 +82,8 @@ header.headerHome {
 	}
 }
 
+/*----- SECTION WELCOME-----*/
+
 .container-welcome {
 	position: relative;
 	width: 100%;
@@ -141,6 +145,8 @@ header.headerHome {
 	}
 }
 
+/*------ SECTION ABOUT -------*/
+
 .about {
 	position: relative;
 	padding: 100px;
@@ -157,6 +163,199 @@ header.headerHome {
 		color: #fff;
 	}
 }
+
+/*------ SECTION BENEFITS -------*/
+
+.h2-benefits {
+	position: absolute;
+	font-size: 2.2em;
+	font-weight: 700;
+	color: #fff;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.section-benefits {
+	background: #1c0522;
+	min-height: 100vh;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	& .container-benefits {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		height: 100%;
+
+		& .card {
+			position: relative;
+			width: 400px;
+			height: 420px;
+			background: #0c002b;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 30px;
+			box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+			overflow: hidden;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 2px;
+				left: 2px;
+				bottom: 2px;
+				width: 50%;
+				background: rgba(255, 255, 255, 0.1);
+				pointer-events: none;
+			}
+
+			& .content {
+				padding: 30px;
+				text-align: center;
+
+				& h2 {
+					position: absolute;
+					right: 30px;
+					font-size: 4em;
+					font-weight: 800;
+					color: #1779ff;
+					z-index: 1;
+					opacity: 0.1;
+					transition: 0.5s;
+					font-weight: 600;
+				}
+
+				& h3 {
+					position: relative;
+					font-size: 1.5em;
+					color: #fff;
+					z-index: 2;
+					opacity: 0.5;
+					letter-spacing: 1px;
+					transition: 0.5s;
+				}
+
+				& p {
+					position: relative;
+					font-size: 1em;
+					color: #fff;
+					z-index: 2;
+					opacity: 0.5;
+					font-weight: 300;
+					letter-spacing: 1px;
+					transition: 0.5s;
+				}
+			}
+
+			&:hover .content h2 {
+				opacity: 1;
+				transform: translateY(-60px);
+			}
+
+			&:hover .content h3,
+			&:hover .content p {
+				opacity: 1;
+			}
+
+			& span {
+				transition: 0.5s;
+				opacity: 0;
+			}
+
+			&:hover span {
+				opacity: 1;
+			}
+
+			& span:nth-child(1) {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 3px;
+				background: linear-gradient(to right, transparent, #1779ff);
+				animation: animate1 2s linear infinite;
+			}
+
+			& span:nth-child(2) {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 3px;
+				height: 100%;
+				background: linear-gradient(to bottom, transparent, #1779ff);
+				animation: animate2 2s linear infinite;
+				animation-delay: 1s;
+			}
+
+			& span:nth-child(3) {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 3px;
+				background: linear-gradient(to right, transparent, #1779ff);
+				animation: animate3 2s linear infinite;
+			}
+
+			& span:nth-child(4) {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 3px;
+				height: 100%;
+				background: linear-gradient(to top, transparent, #1779ff);
+				animation: animate4 2s linear infinite;
+				animation-delay: 1s;
+			}
+		}
+
+		& .card:hover {
+			opacity: 1;
+		}
+	}
+}
+
+@keyframes animate1 {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+@keyframes animate2 {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(100%);
+	}
+}
+
+@keyframes animate3 {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes animate4 {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(-100%);
+	}
+}
+
+/*------ SECTION CREATORS -------*/
 
 .container-creators {
 	background: #1c0522;
@@ -323,6 +522,8 @@ header.headerHome {
 	}
 }
 
+/*------ FOOTER -------*/
+
 footer.footerHome {
 	position: relative;
 	background: #261641;
@@ -398,6 +599,20 @@ footer.footerHome {
 				font-weight: 500;
 			}
 		}
+	}
+}
+
+/*------ MEDIA QUERIES -------*/
+
+@media (max-width: 1079px) {
+	.section-benefits {
+		padding-top: 50px;
+	}
+}
+
+@media (max-width: 963px) {
+	.h2-benefits {
+		margin-bottom: 100px;
 	}
 }
 

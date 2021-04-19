@@ -5,6 +5,7 @@ import Welcome from '../components/home/Welcome'
 import About from '../components/home/About'
 import Creators from '../components/home/Creators'
 import Footer from '../components/home/Footer'
+import Benefits from '../components/home/Benefits'
 
 const Home = () => {
 	return (
@@ -12,6 +13,7 @@ const Home = () => {
 			<Header />
 			<Welcome />
 			<About />
+			<Benefits />
 			<Creators />
 			<Footer />
 		</div>

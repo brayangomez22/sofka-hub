@@ -21,6 +21,9 @@ const Header = () => {
 				<li>
 					<a href="#creators">Creators</a>
 				</li>
+				<li>
+					<a href="#benefits">Benefits</a>
+				</li>
 			</ul>
 		</header>
 	)
